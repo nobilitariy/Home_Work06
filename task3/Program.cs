@@ -37,14 +37,14 @@ void PrintArray(int [,] array){
 
 void GetAverage(int [,] array){
     PrintArray(array);
-    for(int i = 0; i <  array.GetLength(0); i++){
+    for(int j = 0; j <  array.GetLength(1); j++){
         float sum = 0;
         float average = 0;
-        for(int j = 0; j < array.GetLength(1); j++){
+        for(int i = 0; i < array.GetLength(0); i++){
             sum += array[i, j];
-            average = sum / array.GetLength(1);
+            average = sum / array.GetLength(0);
         }
-        Console.WriteLine($"Среднее арифметиеское строки {i + 1} = {average}");
+        Console.WriteLine($"Среднее арифметиеское столбца {j + 1} = {average}");
     }
 }
 
