@@ -15,8 +15,6 @@ double GetRand(){
 }
 
 double [,] GetArray(int [] array){
-    Random rand = new Random();
-    double number = rand.NextDouble() * rand.Next(1,11);
     double [,] arrayNew = new double [array[0], array[1]];
     for(int i = 0; i < array[0]; i++){
         for(int j = 0; j < array[1]; j++){
